@@ -171,7 +171,26 @@ dialog button{position:absolute;top:-44px;right:0;background:none;border:1px sol
     </div>
 
     <article class="project">
-      <div class="p-meta"><div class="num">01</div><div class="mono kind">Personal · AI</div><span class="badge" data-badge="daily-push">Code + architecture</span></div>
+      <div class="p-meta"><div class="num">01</div><div class="mono kind">Personal · SaaS · In development</div><span class="badge">Code + screens</span></div>
+      <div>
+        <h3>HRMS: multi-tenant HR &amp; payroll platform</h3>
+        <p>An India-first HR system that takes an employee from onboarding through attendance, leave and payroll. Many companies share one system, and each company's data stays walled off from the others.</p>
+        <ul>
+          <li>Company data kept apart by the database itself (PostgreSQL row-level security). The API refuses to start if it could get around that</li>
+          <li>Payroll worked out by a Python engine from a frozen snapshot, with Indian rules for tax, HRA, PF, ESI and professional tax</li>
+          <li>Node.js API with a reliable event pipeline (outbox + SQS), 22 written design decisions and Terraform for AWS</li>
+          <li>Phase 1 works end to end: core HR, attendance, leave and payroll. Payroll corrections, gratuity and bonus are in progress</li>
+        </ul>
+        <div class="stack"><span>Node.js</span><span>TypeScript</span><span>React</span><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQS</span><span>Terraform</span></div>
+        <div class="links">
+          <a href="https://github.com/point8290/hrms" target="_blank" rel="noopener">Code ↗</a>
+        </div>
+      </div>
+      <figure class="shot" data-full="img/hrms-payroll.webp" style="margin:0"><img src="img/hrms-payroll.webp" alt="HRMS payroll screen showing finalized pay periods" loading="lazy" width="1600" height="1000"><figcaption>Payroll screen · click to enlarge</figcaption></figure>
+    </article>
+
+    <article class="project">
+      <div class="p-meta"><div class="num">02</div><div class="mono kind">Personal · AI</div><span class="badge" data-badge="daily-push">Code + architecture</span></div>
       <div>
         <h3>Daily Push: AI learning engine</h3>
         <p>Describe a goal in plain words and it works out what to learn, in what order, and gives you one focused session a day.</p>
@@ -190,7 +209,7 @@ dialog button{position:absolute;top:-44px;right:0;background:none;border:1px sol
     </article>
 
     <article class="project">
-      <div class="p-meta"><div class="num">02</div><div class="mono kind">Personal · Generative AI</div><span class="badge" data-badge="music-video-studio">Code + architecture</span></div>
+      <div class="p-meta"><div class="num">03</div><div class="mono kind">Personal · Generative AI</div><span class="badge" data-badge="music-video-studio">Code + architecture</span></div>
       <div>
         <h3>Music Video Studio: local AI video pipeline</h3>
         <p>Turns a song idea into an animated music video, scene by scene, with approval at every step. Runs on local models, so there are no per-request API costs.</p>
@@ -209,7 +228,7 @@ dialog button{position:absolute;top:-44px;right:0;background:none;border:1px sol
     </article>
 
     <article class="project noshot">
-      <div class="p-meta"><div class="num">03</div><div class="mono kind">Personal · SaaS</div><span class="badge" data-badge="letsresolve">Code</span></div>
+      <div class="p-meta"><div class="num">04</div><div class="mono kind">Personal · SaaS</div><span class="badge" data-badge="letsresolve">Code</span></div>
       <div>
         <h3>LetsResolve: support desk &amp; CRM</h3>
         <p>Tickets, customers, contacts and a knowledge base in one app, with a dashboard for ticket volume and resolution time.</p>
@@ -227,7 +246,7 @@ dialog button{position:absolute;top:-44px;right:0;background:none;border:1px sol
     </article>
 
     <article class="project noshot">
-      <div class="p-meta"><div class="num">04</div><div class="mono kind">Personal · Infrastructure lab</div><span class="badge">Code</span></div>
+      <div class="p-meta"><div class="num">05</div><div class="mono kind">Personal · Infrastructure lab</div><span class="badge">Code</span></div>
       <div>
         <h3>FleetIQ: sharded MongoDB lab</h3>
         <p>A full MongoDB 8 sharded cluster in Docker with a small telemetry API, built to study connection pools and how queries get routed across shards.</p>
@@ -243,7 +262,7 @@ dialog button{position:absolute;top:-44px;right:0;background:none;border:1px sol
     </article>
 
     <article class="project">
-      <div class="p-meta"><div class="num">05</div><div class="mono kind">Client work · IoT</div><span class="badge">Architecture</span></div>
+      <div class="p-meta"><div class="num">06</div><div class="mono kind">Client work · IoT</div><span class="badge">Architecture</span></div>
       <div>
         <h3>IoT device management &amp; analytics platform</h3>
         <p>Onboarding, licensing and compliance reporting for 1,000+ scanning devices across client sites.</p>
@@ -258,7 +277,7 @@ dialog button{position:absolute;top:-44px;right:0;background:none;border:1px sol
     </article>
 
     <article class="project">
-      <div class="p-meta"><div class="num">06</div><div class="mono kind">Client work · Government data</div><span class="badge">Architecture</span></div>
+      <div class="p-meta"><div class="num">07</div><div class="mono kind">Client work · Government data</div><span class="badge">Architecture</span></div>
       <div>
         <h3>National Food Database System (FSSAI)</h3>
         <p>Ingestion and search for India's national food-testing database, processing Excel files of 75,000+ rows.</p>
@@ -273,7 +292,7 @@ dialog button{position:absolute;top:-44px;right:0;background:none;border:1px sol
     </article>
 
     <article class="project">
-      <div class="p-meta"><div class="num">07</div><div class="mono kind">Client work · E-commerce</div><span class="badge">Architecture</span></div>
+      <div class="p-meta"><div class="num">08</div><div class="mono kind">Client work · E-commerce</div><span class="badge">Architecture</span></div>
       <div>
         <h3>HealthFiesta e-commerce platform</h3>
         <p>A complete online store built end to end: catalog, cart, checkout, payments and an admin dashboard.</p>
